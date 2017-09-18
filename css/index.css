@@ -1,0 +1,10 @@
+body {
+  padding-top: 50px;
+}
+.page {
+	border: 1px solid red;
+}
+.starter-template {
+  padding: 40px 15px;
+  text-align: center;
+}
