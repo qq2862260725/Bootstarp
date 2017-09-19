@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-type" content="text/html" charset="utf-8">
+	<meta http-equiv="X-UA-Compatibel" content="IE=edge">
+	<link href="img/icon.png" rel="shortcut icon">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>下拉菜单</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+</head>
+<style>
+	.page {
+		height: auto;
+		width: 100%;
+		border: 1px solid red;
+	}
+	.container {
+		border: 1px solid blue;
+	}
+	.row {
+		border: 1px solid #333;
+	}
+</style>
+<body>
+	<div class="page">
+		<div class="container">
+			<div class="dropdown">
+				<button type="button" class="btn dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown">
+					主体
+					<span class="caret"></span>
+				</button>
+				<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+					<li role="presentation">
+						<a href="#" role="menuitem" tabindex="-1">Web</a>
+					</li>
+					<li role="presentation" class="dropdown-header">
+						<h4>Base</h4>
+					</li>
+					<li role="presentation">
+						<a href="#" role="menuitem" tabindex="-1">Html</a>
+					</li>
+					<li role="presentation">
+						<a href="#" role="menuitem" tabindex="-1">Css</a>
+					</li>
+					<li role="presentation">
+						<a href="#" role="menuitem" tabindex="-1">Js</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</body>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</html>

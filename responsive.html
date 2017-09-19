@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-type" content="text/html" charset="utf-8">
+	<meta http-equiv="X-UA-Compatibel" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="img/icon.png" rel="shortcut icon">
+	<title>Resposive</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+</head>
+<style>
+	.page {
+		height: auto;
+		width: 100%;
+		border: 1px solid red;
+	}
+	.container {
+		padding: 40px;
+		border: 1px solid blue;
+	}
+	.row {
+		border: 1px solid #333;
+	}
+</style>
+<body>
+	<div class="page">
+		<div class="container">
+			<div class="row visible-on">
+				<div class="col-xs-6 col-sm-3" style="background-color: #dedef8; box-shadow:inset 1px -1px 1px #444, inset -1px 1px 1px #444">
+					<span class="hidden-xs">特别小型</span>
+					<span class="visible-xs">在特别小型屏幕上可以看见</span>
+				</div>
+				<div class="col-xs-6 col-sm-3" style="background-color: #dedef8; box-shadow:inset 1px -1px 1px #444, inset -1px 1px 1px #444">
+					<span class="hidden-sm">小型</span>
+					<span class="visible-sm">在小型屏幕上可以看见</span>
+				</div>
+				<div class="col-xs-6 col-sm-3" style="background-color: #dedef8; box-shadow:inset 1px -1px 1px #444, inset -1px 1px 1px #444">
+					<span class="hidden-md">中型</span>
+					<span class="visible-md">在中型屏幕上可以看见</span>
+				</div>
+				<div class="col-xs-6 col-sm-3" style="background-color: #dedef8; box-shadow:inset 1px -1px 1px #444, inset -1px 1px 1px #444">
+					<span class="hidden-lg">大型</span>
+					<span class="visible-lg">在大型屏幕上可以看见</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</html>
