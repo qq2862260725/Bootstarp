@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>Bread Nav</title>
+	<link href="img/icon.png" rel="shortcut icon">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+</head>
+<style>
+	.page {
+		height: auto;
+		width: 100%;
+		border: 1px solid red;
+	}
+	.container {
+		height: auto;
+		border: 1px solid blue;
+	}
+	.row {
+		height: auto;
+		border: 1px solid green;
+	}
+	.ad {
+		border: 1px solid #333;
+	}
+</style>
+<body>
+	<div class="page">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4 ad">
+					<ul class="pagination" id="one">
+						<li><a href="#">&laquo;</a></li>
+						<li class="active two"><a href="#">1</a></li>
+						<li class="two"><a href="#">2</a></li>
+						<li class="two"><a href="#">3</a></li>
+						<li class="two"><a href="#">4</a></li>
+						<li class="two"><a href="#">5</a></li>
+						<li><a href="#">&raquo;</a></li>
+					</ul>
+				</div>
+				<div class="col-sm-4 ad">
+					<ul class="pagination pagination-lg">
+						<li><a href="#">&laquo;</a></li>
+						<li><a href="#">1</a></li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">4</a></li>
+						<li><a href="#">5</a></li>
+						<li><a href="#">&raquo;</a></li>
+					</ul>
+				</div>
+				<div class="col-sm-4 ad">
+					<ul class="pagination pagination-sm">
+						<li><a href="#">&laquo;</a></li>
+						<li><a href="#">1</a></li>
+						<li><a href="#">2</a></li>
+						<li><a href="#">3</a></li>
+						<li><a href="#">4</a></li>
+						<li><a href="#">5</a></li>
+						<li><a href="#">&raquo;</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-3 ad">
+					<ul class="pager">
+						<li><a href="#">Previous</a></li>
+						<li><a href="#">Next</a></li>
+					</ul>
+				</div>
+				<div class="col-sm-3 ad">
+					<ul class="pager">
+					    <li class="previous disabled"><a href="#">&larr; Older</a></li>
+					    <li class="next"><a href="#">Newer &rarr;</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/pagination.js"></script>
+</html>

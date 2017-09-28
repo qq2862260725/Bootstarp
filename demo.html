@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>A</title>
+	<link rel="stylesheet" type="text/css" href="css/base.css">
+</head>
+<body>
+	<input type="text" name="pass" id="zero">
+	<a href="javascript:void(0);" id="one">跳转</a>
+	<input type="text" name="mail" id="mail"><button id="verify">验证</button>
+</body>
+<script>
+	var zero = document.getElementById('zero');
+	var a = document.getElementById('one');
+	var b = 'button.html';
+	a.onclick = function(){
+		if (zero.value == '') {
+			console.log(111);
+			return;
+		} else {
+			a.href = 'button.html';
+		}
+	}
+
+	/*邮箱验证*/
+	var verify = document.getElementById('verify');
+	var mail = document.getElementById('mail');
+	// var reg=/^([a-zA-Z0-9]+[_|\-|\.]?)*[a-zA-Z0-9]+@([a-zA-Z0-9]+[_|\-|\.]?)*[a-zA-Z0-9]+\.[a-zA-Z]{2,3}$/gi;
+	var reg = /^\w+((-\w+)|(\.\w+))*\@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z0-9]+$/;
+
+	verify.onclick = function(){
+		if (mail.value == '') {
+			console.log('邮箱不能为空');
+			return false;
+		} else {
+			if (!reg.test(mail.value)) {
+				alert('非法');
+				return false;
+			} else {
+				
+			}
+		}
+	}
+</script>
+</html>
